@@ -71,6 +71,7 @@ fun main(args: Array<String>) {
 
     // Arreglo Dinámico
     val arregloDinamico: ArrayList<Int> = arrayListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    println(arregloDinamico)
 
     // OPERADORES -> Sirven para los areglos estáticos y dinámicos
     // FOR EACH -> Unit
