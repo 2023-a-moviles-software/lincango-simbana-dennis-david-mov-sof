@@ -83,10 +83,10 @@ fun main(args: Array<String>) {
     //Nos devuelve el valor que está iterando:
     arregloDinamico.forEach{ println(it) } // it (en inglés eso) significa el elemento iterado
 
-    arregloEstatico
-        .forEachIndexed{ indice: Int, valorActual: Int ->
-            println("Valor ${valorActual} Indice: ${indice}")
-        }
+    arregloEstatico.forEachIndexed { index: Int, valorActual ->
+        println("$index.- Valor $valorActual")
+    }
+
     println(respuestaForEach)
 
     // MAP -> Muta el arreglo (Cambia el arreglo)
