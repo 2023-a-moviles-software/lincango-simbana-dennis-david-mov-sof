@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/layout/activity_aaciclo_vida.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/layout/activity_aciclo_vida.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/layout/activity_blist_view.xml" value="0.33" />
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" value="0.5" />
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/adrian.eguez/Documents/Github/2023A/eguez-sarzosa-vicente-adrian-mov-sof/01 - Android/app/src/main/res/menu/menu.xml" value="0.33" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK" />
 </project>

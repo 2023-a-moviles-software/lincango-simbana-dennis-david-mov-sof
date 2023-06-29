@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "458380300259",
-    "project_id": "a-moviles-software-25f92",
-    "storage_bucket": "a-moviles-software-25f92.appspot.com"
+    "project_number": "1086827040888",
+    "project_id": "a-moviles-software",
+    "storage_bucket": "a-moviles-software.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:458380300259:android:b2801dc22b69fb91e4dad6",
+        "mobilesdk_app_id": "1:1086827040888:android:7031c25822317f2be0dd8d",
         "android_client_info": {
           "package_name": "com.example.movilessoftware2023a"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDGBOpk04iavNBg_2k6fWvHAcvd54OWbRI"
+          "current_key": "AIzaSyD0lXOorYB9r3jCxKpdwgkfuvoctICIlH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086827040888:android:5f8880376c40e8c3e0dd8d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0lXOorYB9r3jCxKpdwgkfuvoctICIlH4"
         }
       ],
       "services": {
