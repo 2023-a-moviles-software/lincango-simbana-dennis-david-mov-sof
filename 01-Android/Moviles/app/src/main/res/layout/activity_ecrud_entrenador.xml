@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ECrudEntrenador">
+
+    <Button
+        android:id="@+id/btn_buscar_bdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btn_crear_bdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btn_actualizar_bdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btn_eliminar_bdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <EditText
+        android:id="@+id/input_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese id"
+        app:layout_constraintEnd_toEndOf="@+id/input_nombre"
+        app:layout_constraintStart_toStartOf="@+id/input_nombre"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese nombre"
+        app:layout_constraintEnd_toEndOf="@+id/input_descripcion"
+        app:layout_constraintStart_toStartOf="@+id/input_descripcion"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/input_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese descripcion"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
