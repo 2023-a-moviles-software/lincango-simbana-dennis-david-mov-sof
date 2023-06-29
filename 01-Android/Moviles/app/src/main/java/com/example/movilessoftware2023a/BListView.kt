@@ -1,5 +1,7 @@
 package com.example.movilessoftware2023a
 
+import android.app.Dialog
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -9,6 +11,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+import androidx.appcompat.app.AlertDialog
 import com.example.movilescomputacion2023a.BBaseDatosMemoria
 import com.example.movilescomputacion2023a.BEntrenador
 
@@ -35,22 +38,54 @@ class BListView : AppCompatActivity() {
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId){
-            R.id.mi_editar ->{
+        return when (item.itemId) {
+            R.id.mi_editar -> {
                 "Hacer algo con: ${idItemSeleccionado}"
                 return true
             }
-            R.id.mi_eliminar ->{
+
+            R.id.mi_eliminar -> {
+                abrirDialogo()
                 "Hacer algo con: ${idItemSeleccionado}"
                 return true
             }
+
             else -> super.onContextItemSelected(item)
         }
 
-
-
     }
 
+    fun abrirDialogo() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Desea eliminar?")
+        builder.setPositiveButton(
+            "Aceptar",
+            DialogInterface.OnClickListener { dialog, which -> //alguna cosa
+            }
+        )
+        builder.setNegativeButton("Cancelar", null)
+
+        val opciones = resources.getStringArray(
+            R.array.string_array_opciones_dialogo
+        )
+
+        val seleccionPrevia = booleanArrayOf(
+            true, // Lunes seleccionado
+            false, // Martes no seleccionado
+            false, // Miercoles no seleccionado
+        )
+
+        builder.setMultiChoiceItems(
+            opciones,
+            seleccionPrevia,
+            { dialog, which, isChecked ->
+                "Dio clic en el item ${which}"
+            }
+        )
+        val dialogo = builder.create()
+        dialogo.show()
+
+    }
 
 
     override fun onCreateContextMenu(
@@ -70,7 +105,7 @@ class BListView : AppCompatActivity() {
 
     fun anadirEntrenador(
         adaptador: ArrayAdapter<BEntrenador>
-    ){
+    ) {
         arreglo.add(
             BEntrenador(4, "Adrian", "Descripcion")
         )
