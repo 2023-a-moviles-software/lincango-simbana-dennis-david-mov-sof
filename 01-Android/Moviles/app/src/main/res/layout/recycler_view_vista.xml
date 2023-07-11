@@ -11,18 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="Dar like"
-        app:layout_constraintEnd_toEndOf="@+id/tv_cedula"
-        app:layout_constraintStart_toStartOf="@+id/tv_cedula"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cedula" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cedula"
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
         android:id="@+id/tv_cedula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
         android:text="Cedula"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toStartOf="@+id/tv_likes"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_nombre"
@@ -30,10 +35,10 @@
         android:layout_height="wrap_content"
         android:text="Nombre"
         app:layout_constraintBottom_toBottomOf="@+id/tv_cedula"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_cedula"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="54dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_likes"
@@ -41,8 +46,8 @@
         android:layout_height="wrap_content"
         android:text="Likes"
         app:layout_constraintBottom_toBottomOf="@+id/tv_cedula"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_cedula"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="324dp" />
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

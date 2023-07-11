@@ -23,6 +23,7 @@ class ESqliteHelperEntrenador(
                     descripcion VARCHAR(50)
                 )
             """.trimIndent()
+        db?.execSQL(scriptSQLCrearTablaEntrenador)
     }
 
     override fun onUpgrade(

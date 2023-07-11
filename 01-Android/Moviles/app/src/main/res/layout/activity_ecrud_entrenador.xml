@@ -10,64 +10,84 @@
         android:id="@+id/btn_buscar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Buscar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="429dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_bdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_bdd"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_crear_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
         android:text="Crear"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="429dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_eliminar_bdd"
+        app:layout_constraintEnd_toStartOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toEndOf="@+id/btn_buscar_bdd"
+        app:layout_constraintTop_toBottomOf="@+id/input_descripcion" />
 
     <Button
         android:id="@+id/btn_actualizar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="Actualizar"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="429dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_bdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_bdd"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_eliminar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
         android:text="Eliminar"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="516dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/input_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="209dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="96dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Ingrese id"
-        app:layout_constraintEnd_toEndOf="@+id/input_nombre"
-        app:layout_constraintStart_toStartOf="@+id/input_nombre"
-        tools:layout_editor_absoluteY="202dp" />
+        android:hint="Ingrese id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Ingrese nombre"
-        app:layout_constraintEnd_toEndOf="@+id/input_descripcion"
-        app:layout_constraintStart_toStartOf="@+id/input_descripcion"
-        tools:layout_editor_absoluteY="264dp" />
+        android:hint="Ingrese nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_id" />
 
     <EditText
         android:id="@+id/input_descripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Ingrese descripcion"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="322dp" />
+        android:hint="Ingrese descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_nombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
