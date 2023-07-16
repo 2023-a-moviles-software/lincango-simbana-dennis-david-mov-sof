@@ -1,0 +1,5 @@
+Integrantes: 
+- Lincango Dennis
+- Ponce Andrés
+
+Enlace historias de usuario: https://jira.external-share.com/issue/ab482baa-4033-4fd2-b914-fbafa155385e?expandedEpics=&roadmapCurrentView=&groupBy=EPIC
