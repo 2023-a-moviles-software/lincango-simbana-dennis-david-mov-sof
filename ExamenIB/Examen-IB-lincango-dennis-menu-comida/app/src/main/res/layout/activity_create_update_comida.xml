@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".vista.CreateComidaView">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="375dp"
+        android:layout_height="410dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999">
+
+        <EditText
+            android:id="@+id/txtNombreComida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese el nombre de la comida"
+            android:inputType="text"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/txtTipoComida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese el tipo"
+            android:inputType="text"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/txtDescripcionComida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese la descripción"
+            android:inputType="text"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/txtCaloriasComida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese las calorias (kcal)"
+            android:inputType="text"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/txtIngredientesComida"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese los ingredientes (separados por comas)"
+            android:inputType="text"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAceptarComida"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.914"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
