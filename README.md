@@ -1,4 +1,4 @@
-<h1 align="center"> Mi repositorio </h1> 
+<h1 align="center"> Aplicaciones móviles </h1> 
 
 ## Autor:
 - Lincango Dennis
