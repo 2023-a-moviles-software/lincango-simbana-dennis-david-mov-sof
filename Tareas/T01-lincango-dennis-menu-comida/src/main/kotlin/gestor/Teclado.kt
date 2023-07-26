@@ -11,8 +11,8 @@ import kotlin.system.exitProcess
 @Suppress("UNREACHABLE_CODE")
 class Teclado {
 
-    private val menuDAO: MenuDAO = MenuDAO(GestorArchivos("Tareas/T01-lincango-dennis-menu-comida/src/main/kotlin/archivos/menus.txt"))
-    private val comidaDAO: ComidaDAO = ComidaDAO(GestorArchivos("Tareas/T01-lincango-dennis-menu-comida/src/main/kotlin/archivos/comidas.txt"))
+    private val menuDAO: MenuDAO = MenuDAO(GestorArchivos("src/main/kotlin/archivos/menus.txt"))
+    private val comidaDAO: ComidaDAO = ComidaDAO(GestorArchivos("src/main/kotlin/archivos/comidas.txt"))
     private val scanner: Scanner = Scanner(System.`in`)
 
 
