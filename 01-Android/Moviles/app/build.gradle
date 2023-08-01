@@ -42,6 +42,13 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
     implementation("com.google.firebase:firebase-analytics-ktx")
 
+    // Lubrearia de Autenticacion
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    // UI libreria auth
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+    // Firestore
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.8.0'
