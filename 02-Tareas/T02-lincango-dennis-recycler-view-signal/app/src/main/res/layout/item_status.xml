@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!-- item_chat.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.30"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextNameChat"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorTextMessage" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageStatus"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.4"
+        android:minWidth="60dp"
+        android:paddingHorizontal="40dp"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

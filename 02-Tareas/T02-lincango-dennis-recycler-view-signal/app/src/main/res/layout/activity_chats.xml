@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="0px">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="0dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProfileView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artwork"
+            />
+
+        <TextView
+            android:id="@+id/bannerTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:paddingVertical="25dp"
+            android:text="Signal"
+            android:textColor="@color/colorTextsBanner"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:contentDescription="Search"
+            android:paddingVertical="25dp"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+            tools:ignore="HardcodedText"
+            app:tint="@color/colorTextsBanner" />
+
+        <ImageView
+            android:id="@+id/imageViewOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:maxHeight="45dp"
+            android:paddingHorizontal="10dp"
+            app:srcCompat="@drawable/options" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom = "10dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/list_item_selector"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundFooter"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Mensajes"
+                android:minHeight="60dp"
+                app:tint="@color/colorButtons"
+                app:srcCompat="@android:drawable/sym_action_chat"
+                android:background="@drawable/button_selector"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chats"
+                android:textColor="@color/colorTextButtons"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Hacer llamada telefónica"
+                android:minHeight="60dp"
+                app:tint="@color/colorButtons"
+                app:srcCompat="@android:drawable/stat_sys_phone_call"
+                android:background="@drawable/button_selector"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calls"
+                android:textColor="@color/colorTextButtons"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonStories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Ver estados"
+                android:minHeight="60dp"
+                app:tint="@color/colorButtons"
+                app:srcCompat="?attr/actionModeCopyDrawable"
+                android:background="@drawable/button_selector"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorTextButtons"
+                android:text="Stories"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

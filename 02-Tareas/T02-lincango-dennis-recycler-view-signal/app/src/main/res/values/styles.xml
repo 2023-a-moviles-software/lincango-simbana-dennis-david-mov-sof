@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- Otros atributos del estilo -->
+    </style>
+
+    <!-- Estilo de texto personalizado con la fuente personalizada -->
+    <style name="CustomFontStyle">
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
