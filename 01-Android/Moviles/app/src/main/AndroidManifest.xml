@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MovilesSoftware2023A"
         tools:targetApi="31">
         <activity
+            android:name=".IFirestore"
+            android:exported="false" />
+        <activity
             android:name=".HFirebaseUIAuth"
             android:exported="false" />
         <activity
