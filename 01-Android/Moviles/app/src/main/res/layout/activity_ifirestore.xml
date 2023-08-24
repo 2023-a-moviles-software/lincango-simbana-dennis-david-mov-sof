@@ -4,40 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IFirestore">
+    tools:context=".IFirestore"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="1dp"
+
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+
+            >
 
             <Button
                 android:id="@+id/btn_fs_datos_prueba"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="C. Datos" />
+                android:text="C. Datos"
+                android:layout_margin="10px"
+
+                />
 
             <Button
                 android:id="@+id/btn_fs_order_by"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Order by" />
+                android:text="Order by"
+                android:layout_margin="10px"
+                />
 
             <Button
                 android:id="@+id/btn_fs_odoc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="O. Doc" />
+                android:text="O. Doc"
+                android:layout_margin="10px"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -49,21 +62,27 @@
                 android:id="@+id/btn_fs_ind_comp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="In. Comp" />
+                android:text="In. Comp"
+                android:layout_margin="10px"
+                />
 
             <Button
                 android:id="@+id/btn_fs_crear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Crear" />
+                android:text="Crear"
+                android:layout_margin="10px"
+                />
 
             <Button
                 android:id="@+id/btn_fs_eliminar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Eliminar" />
+                android:text="Eliminar"
+                android:layout_margin="10px"
+                />
 
         </LinearLayout>
 
@@ -77,14 +96,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="E. Paginar" />
+                android:text="E. Paginar"
+                android:layout_margin="10px"
+                />
 
             <Button
                 android:id="@+id/btn_fs_paginar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Paginar" />
+                android:text="Paginar"
+                android:layout_margin="10px"
+                />
         </LinearLayout>
 
         <ListView
