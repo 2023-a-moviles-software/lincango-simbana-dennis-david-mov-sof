@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/imageButtonClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/close_window"
+            app:srcCompat="@drawable/close"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            tools:ignore="ImageContrastCheck" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/save"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+       >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/task_name"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonCalendar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/calendar"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/calendar"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonPin"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/image_button_selector"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/pin"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <CheckBox
+                android:id="@+id/checkBoxAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/checkbox_color"
+                tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+
+            <EditText
+                android:id="@+id/editTextDescriptionAddTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
+                android:inputType="text"
+                android:minHeight="48dp"
+                tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_sub_task"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="ImageContrastCheck"
+        app:tint="@color/black" />
+
+</LinearLayout>

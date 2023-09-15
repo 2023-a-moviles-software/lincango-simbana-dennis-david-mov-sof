@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DatePickerStyle" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <!-- Cambia el color de fondo del DatePickerDialog -->
+        <item name="android:windowBackground">@color/colorFondoDialogo</item>
+        <!-- Cambia el color de los números de día en el calendario -->
+        <item name="android:colorControlActivated">@color/colorNumeroDia</item>
+        <!-- Cambia el color del fondo de los números de día seleccionados -->
+        <item name="android:colorAccent">@color/colorFondoNumeroSeleccionado</item>
+        <!-- Cambia el color del texto de los números de día -->
+        <item name="android:textColorPrimary">@color/colorTextoNumeroDia</item>
+        <!-- Cambia el color del botón "OK" -->
+        <item name="colorAccent">@color/colorBotonOK</item>
+        <!-- Cambia el color del botón "Cancelar" -->
+        <item name="android:textColorSecondary">@color/colorBotonCancelar</item>
+    </style>
+
+
+</resources>
