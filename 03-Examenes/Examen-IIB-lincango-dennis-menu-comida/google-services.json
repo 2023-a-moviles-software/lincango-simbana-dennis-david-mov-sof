@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "772649080719",
+    "project_id": "examen2-dennis-lincango",
+    "storage_bucket": "examen2-dennis-lincango.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772649080719:android:9b47fe618fe2fa46f1ddfa",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB56OMMD5SDVKCJXHkpUp2sdbDCLooQoPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
