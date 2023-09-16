@@ -9,16 +9,16 @@ import android.provider.ContactsContract
 import android.util.Log
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.movilescomputacion2023a.BEntrenador
 
 class MainActivity : AppCompatActivity() {
 
     val callbackContenidoIntentExplicito =
         registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
-        ){
-                result ->
-            if(result.resultCode == Activity.RESULT_OK){
-                if(result.data != null){
+        ) { result ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                if (result.data != null) {
                     // Logica Negocio
                     val data = result.data
                     "${data?.getStringExtra("nombreModificado")}"
@@ -29,13 +29,12 @@ class MainActivity : AppCompatActivity() {
     val callbackIntentPickUri =
         registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
-        ){
-                result ->
-            if(result.resultCode === RESULT_OK){
-                if(result.data != null){
-                    if(result.data!!.data != null){
-                        val uri:Uri = result.data!!.data!!
-                        val cursor = contentResolver.query(uri, null, null, null,  null, null)
+        ) { result ->
+            if (result.resultCode === RESULT_OK) {
+                if (result.data != null) {
+                    if (result.data!!.data != null) {
+                        val uri: Uri = result.data!!.data!!
+                        val cursor = contentResolver.query(uri, null, null, null, null, null)
                         cursor?.moveToFirst()
                         val indiceTelefono = cursor?.getColumnIndex(
                             ContactsContract.CommonDataKinds.Phone.NUMBER
@@ -117,7 +116,7 @@ class MainActivity : AppCompatActivity() {
 
     fun irActividad(
         clase: Class<*>
-    ){
+    ) {
         val intent = Intent(this, clase)
         // NO RECIBIMOS RESPUESTA
         startActivity(intent)
@@ -126,13 +125,18 @@ class MainActivity : AppCompatActivity() {
 
     fun abrirActividadConParametros(
         clase: Class<*>
-    ){
+    ) {
         val intentExplicito = Intent(this, clase)
         // Enviar parametros
         // (aceptamos primitivas)
         intentExplicito.putExtra("nombre", "Dennis")
         intentExplicito.putExtra("apellido", "Lincango")
         intentExplicito.putExtra("edad", 24)
+        intentExplicito.putExtra(
+            "entrenador", BEntrenador(
+                1, "Dennis", "Lincango"
+            )
+        )
         // enviamos el intent con RESPUESTA
         // RECIBIMOS RESPUESTA
         callbackContenidoIntentExplicito
