@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ProgressPro</string>
+    <string name="description">Description</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="username">Username</string>
+    <string name="profile">Profile</string>
+    <string name="pin">Pin</string>
+    <string name="calendar">Calendar</string>
+    <string name="save">Save</string>
+    <string name="add_sub_task">Add sub-task</string>
+    <string name="task_name">Task name</string>
+    <string name="close_window">Close window</string>
+    <string name="item_text">Item Text</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="badge">Insign</string>
+    <string name="leader">Leader</string>
+    <string name="lock">Lock</string>
+    <string name="your_summary_appears_here">Your summary appears here!</string>
+    <string name="task_completed">Task completed</string>
+    <string name="history">History</string>
+    <string name="task">Task</string>
+    <string name="move_to_interface_add_task">Move to interface Add Task</string>
+</resources>

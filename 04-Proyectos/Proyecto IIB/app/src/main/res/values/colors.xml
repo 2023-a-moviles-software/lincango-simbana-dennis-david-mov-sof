@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorFondoDialogo">#FFFFFFFF</color>
+    <color name="colorNumeroDia">#1290CD</color>
+    <color name="colorFondoNumeroSeleccionado">#006494</color>
+    <color name="colorTextoNumeroDia">#FF000000</color>
+    <color name="colorBotonOK">#B71C1C</color>
+    <color name="colorBotonCancelar">#FF000000</color>
+
+    <color name="colorDisabled">#006494</color>
+    <color name="colorUnchecked">#FF000000</color>
+    <color name="colorChecked">#006494</color>
+
+
+</resources>
